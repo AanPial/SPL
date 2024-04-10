@@ -1,0 +1,25 @@
+#include<stdio.h>
+int main()
+{
+    int row,col,n;
+
+    printf("Enter n : ");
+    scanf("%d",&n);
+
+    for(row=1;row<=n;row++)
+    {
+        for(col=1;col<=n;col++)
+        {
+            if(row==1 || row==n || row==n-col+1)
+            {
+                printf("Z");
+            }
+            else
+            {
+                printf(" ");
+            }
+        }
+        printf("\n");
+    }
+    return 0;
+}
